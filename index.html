@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+
+  <span class="bg"></span>
+  <main class="main-bg">
+    <div class="main-form container">
+      <div>
+        <h1>Cadastre-se</h1>
+        <form autocomplete="off" class="form" action="submit">
+          <div class="infos">
+            <label for="nome">
+              Nome Completo
+              <input autocomplete="off" required class="form-input" type="text" placeholder="João Pedro Gonçalves"
+                id="nome">
+            </label>
+            <label for="email">
+              Email
+              <input autocomplete="off" required class="form-input" type="email" placeholder="email@email.com" id="email">
+            </label>
+            <label for="celular">
+              Telefone (opcional)
+              <input autocomplete="off" class="form-input" type="number" placeholder="+55 13 123456789" id="celular">
+            </label>
+          </div>
+          <p class="address-title">Endereço:</p>
+          <div class="address">
+            <label for="logradouro">
+              Logradouro
+              <input autocomplete="off" required class="form-input" type="text" placeholder="Av. São João"
+                id="logradouro">
+            </label>
+            <label for="n-residencia">
+              Número da residência
+              <input autocomplete="off" required class="form-input" type="number" id="n-residencia" placeholder="213/A">
+            </label>
+            <label for="bairro">
+              Bairro (opcional)
+              <input autocomplete="off" class="form-input" type="text" id="bairro" placeholder="Centro">
+            </label>
+            <label for="cidade/estado">
+              Cidade/Estado
+              <input autocomplete="off" required class="form-input" type="text" id="cidade/estado"
+                placeholder="São Paulo/SP">
+            </label>
+            <label for="cep" class="cep">
+              CEP
+              <input autocomplete="off" required class="form-input" type="number" id="cep" placeholder="11730-000">
+            </label>
+          </div>
+          <p class="address-title">Estado civil:</p>
+          <div class="civil-state">
+            <label for="casado">
+              <input autocomplete="off" checked class="form-input" type="radio" id="casado" name="civil-state">
+              Casado(a)
+            </label>
+            <label for="solteiro">
+              <input autocomplete="off" class="form-input" type="radio" id="solteiro" name="civil-state">
+              Solteiro(a)
+            </label>
+            <label for="viuvo">
+              <input autocomplete="off" class="form-input" type="radio" id="viuvo" name="civil-state">
+              Viúvo(a)
+            </label>
+            <label for="divorciado">
+              <input autocomplete="off" class="form-input" type="radio" id="divorciado" name="civil-state">
+              Divorciado(a)
+            </label>
+            <label for="separado">
+              <input autocomplete="off" class="form-input" type="radio" id="separado" name="civil-state">
+              Separado(a)
+            </label>
+          </div>
+          <p class="address-title">Preferencia de contato:</p>
+          <div class="contact">
+            <label for="choose-telefone">
+              <input autocomplete="off" checked class="form-input" type="radio" id="choose-telefone" name="contact">
+              Telefone
+            </label>
+            <label for="choose-phone">
+              <input autocomplete="off" class="form-input" type="radio" id="choose-phone" name="contact">
+              Celular
+            </label>
+          </div>
+          <div class="terms">
+            <label for="term">
+              <input autocomplete="off" required class="form-input" type="checkbox" id="term">
+              Li e concordo com os <a href="./">termos</a>
+            </label>
+          </div>
+          <button href="./ONGs.html">Confirmar</button>
+        </form>
+      </div>
+      <div class="form-gif">
+        <img src="apertar-as-maos.png" alt="Handshake" />
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
